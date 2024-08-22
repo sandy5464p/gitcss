@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "DINPro_B";
+    src: url("fonts/DINPro-Bold.2676982.woff") format("woff");
+}
+@font-face {
+    font-family: "DINPro_L";
+    src: url("fonts/DINPro-Light.a795567.woff") format("woff");
+}
+@font-face {
+    font-family: "DINPro-M";
+    src: url("fonts/DINPro-Medium.42181d0.woff") format("woff");
+}
+
+body {
+    background-color: #f3f7fa;
+    color: #303030;
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    word-spacing: -0.05em;
+    overflow-y: scroll;
+}
+
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.layout-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.layout-content-wrapper {
+    max-width: 1174px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.shops-header-wrap {
+    width: 1174px;
+}
+
+.shops-content-wrapper {
+    width: 100%;
+    min-height: calc(100vh - 220px);
+}
+
+.shop-list {
+    overflow: hidden;
+    margin: 0 -3px;
+}
+
+.item {
+    width: 230px;
+    margin: 0 3px 6px;
+    float: left;
+}
+
+.myshop {
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.myshop-title {
+    font-family: "DINPro_L";
+    font-size: 20px;
+    font-weight: 400;
+    color: grey;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 45px 0 0;
+}
+
+.myshop-title::before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 22px;
+    background-image: url("https://www.sta1.com/_nuxt/img/icon-myshop@3x.00de977.png");
+    background-size: cover;
+}
+
+.myshop-title strong {
+    font-family: DINPro_B;
+    font-weight: 400;
+}
+
+.count {
+    display: flex;
+    color: #909090;
+    margin-top: 35px;
+}
+
+.count span {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    font-family: DINPro_L;
+    font-size: 12px;
+}
+
+.count em {
+    display: block;
+    font-size: 26px;
+    font-style: normal;
+    padding-top: 20px;
+}
+
+.count span:first-child::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 60px;
+    background-color: #edeff0;
+    position: absolute;
+    right: -1px;
+    top: 0;
+}
+
+.count span:last-child em {
+    color: #ff6b00;
+}

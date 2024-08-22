@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>클래스와 아이디 속성</title>
+        <style>
+            /* #text-container {
+                color: coral;
+            } */
+
+            .span1 {
+                color: blueviolet;
+            }
+
+            .span2 {
+                color: magenta;
+            }
+        </style>
+    </head>
+    <body>
+        <span>클래스와 아이디 속송</span>
+        <span id="text-container" class="span1 span2">
+            아이디는 단 한개의 값만 작성할 수 있고, 클래스는 여러개의 값을
+            작성할 수 있다.
+            <!--속성값에 값을 작성 id는 안됨 class는 "span1 span2"
+             id선택자가 class보다 우선순위가 높다 그 이유는 class보다 구체적이다.
+             class에서 순서는 상관없고 마지막에 끝난 사람만 가능
+            -->
+        </span>
+    </body>
+</html>

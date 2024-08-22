@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>transition 실습</title>
+        <style>
+            div:nth-child(1) {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                transition: all 3s 2s;
+            }
+            div:nth-child(1):hover {
+                width: 400px;
+                height: 100px;
+                background-color: blue;
+                opacity: 30%;
+                transform: translateX(30px);
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

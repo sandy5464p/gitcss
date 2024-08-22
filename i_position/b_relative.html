@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>position - relative</title>
+        <style>
+            #element1,
+            #element2 {
+                width: 200px;
+                height: 100px;
+            }
+
+            #element1 {
+                background-color: orange;
+                position: relative;
+            }
+
+            #element2 {
+                background-color: brown;
+                position: relative;
+            }
+
+            div.in {
+                width: 50px;
+                height: 50px;
+            }
+
+            div.e1-1 {
+                background-color: red;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                /*transform(x축,y축) 선택자 기준*/
+                transform: translate(-50%, -50%);
+            }
+
+            div.e1-2 {
+                position: absolute;
+                background-color: violet;
+                right: 0;
+            }
+
+            div.e2-1 {
+                background-color: black;
+                position: absolute;
+                right: 30%;
+                bottom: 0;
+                /*좌우 수평이동*/
+                transform: calc(50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="element1">
+            <!--(빨간색)-->
+            <div class="in e1-1"></div>
+            <!--(핑크색)-->
+            <div class="in e1-2"></div>
+        </div>
+        <div id="element2">
+            <!--(검정색)-->
+            <div class="in e2-1"></div>
+        </div>
+    </body>
+</html>

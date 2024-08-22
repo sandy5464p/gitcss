@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>스타일 상속</title>
+        <style>
+            body {
+                /*상속받은 속성*/
+                color: green;
+            }
+            * {
+                /*전체 선택자 */
+                color: black;
+            }
+            button {
+                /*태그 선택자 */
+                color: inherit; /* inherit: 부모의 컬러를 */
+            }
+        </style>
+    </head>
+    <body>
+        <span>SPAN</span>
+        <h1>Hedaer</h1>
+        <p>Paragraph <strong>Strong/</strong></p>
+        <button>Button</button>
+    </body>
+</html>

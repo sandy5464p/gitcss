@@ -1,0 +1,49 @@
+body{
+    font-size: 35px;
+}
+#horizon{
+    border: 2px dashed brown;
+    width: 500px;
+    text-align:center;
+    margin: 0 auto;
+    
+    /*margin-left: auto; 
+    margin-right: auto;*/
+}
+
+
+#wrap {
+    display: flex; /*블록 요소만 가능/ 좌우로배치가됨*/
+    justify-content: center; /*수평 flex-direction을 column으로 해서 수직으로 바뀜*/
+    align-items: center; /*수직정렬인데 flex-direction을 column으로 해서 수평으로 바뀜*/
+    flex-direction: column;    /*새로로 배치됨*/
+    width: 500px;
+    height: 300px;
+    border: 4px dotted blueviolet; /*테두리 */ 
+    margin: 0 auto;
+}
+
+#container, #article {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin: 0 auto;
+}
+#container{
+    align-items: end;
+    justify-content: end;
+}
+#article{
+    
+    justify-content:end;
+}
+.element {
+    width: 30px;
+    height: 30px;
+    background-color: dimgray;
+   display: flex;
+   justify-content: end;
+   align-items: end;
+}

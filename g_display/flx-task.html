@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #imagesfloat {
+                display: flex;
+                width: 1260px;
+                height: 305px;
+                margin: 0 auto;
+                /*요소 외부의 공간 조절 따라서 위아래는 0, 좌우는 가운데 맞춤*/
+            }
+            #imagesfloat div {
+                width: 350px;
+                height: 170px;
+            }
+            #imagesfloat div img {
+                /*px안에 이미지가 짤리지 않고 화면에 채우는긋*/
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="imagesfloat">
+            <div class="fleximg">
+                <img src="imags/img1.jpg" />
+            </div>
+            <div class="fleximg">
+                <img src="imags/img2.jpg" />
+            </div>
+            <div class="fleximg">
+                <img src="imags/img3.jpg" />
+            </div>
+        </div>
+    </body>
+</html>

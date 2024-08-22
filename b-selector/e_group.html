@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>그룹 선택자</title>
+        <style>
+            /*h1 태그*/
+            /*안쪽 여백 중 위 여백을 40xp*/
+            /*높이 100xp*/
+            h1 {
+                text-align: center;
+                padding-top: 40px; /*안쪽 여백 중 위 여백을 40xp*/
+                height: 100px; /*높이 100xp*/
+            }
+
+            /* p태그 2개 */
+            /* 안쪽 여백 모두: 10px */
+            /* 자간(letter-spacing): 2px */
+            p {
+                text-align: center;
+                padding: 10px; /* 안쪽 여백 모두: 10px */
+                letter-spacing: 2px; /* 자간(letter-spacing): 2px */
+            }
+
+            /* 첫 번째 p태그의 글자색: 회색 (class사용) */
+            p.tag1 {
+                /*p.(클래스) → 중복되는 클래스이름이 여러개일때 구분하기 위해*/
+                color: gray;
+            }
+            /* 두 번째 p태그의 글자색: 빨강 */
+            p.tag2 {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>그룹(group)선택자</h1>
+        <h2>
+            선택자를 이용해서 스타일을 정의하다보면, 여러 선택자에게 공통된
+            스타일이 사용되는 경우가 있다.
+        </h2>
+        <p class="tag1">
+            이럴때에는 쉼표로 구분해서 여러 선택자를 나영한 후 스타일을 한 번만
+            정의하면 소스코드 작성이 간편해진다.
+        </p>
+        <p class="tag2">
+            예를 들어, h1태그와 h2태그를 사용한 내용을 모두 화면 중앙에 정렬하고
+            싶다면, 그룹 선택자에 h1,h2 {<strong>text-align: center; </strong
+            >}로 스타일을 정의할 수 있다.
+        </p>
+    </body>
+</html>

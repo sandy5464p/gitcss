@@ -1,0 +1,39 @@
+
+/*--------------------------------------------------------------------*/
+#a {
+    display: flex; /*가운데 정렬 시키기*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid violet;
+    width: 800px; /*가로너비 설정*/
+    height: 750px; /*세로높이*/
+}
+
+#b, #g {
+    border: 5px solid red;
+    width: 300px;
+    height: 300px;
+}
+
+#c, #e {
+    border: 5px solid green;
+    width: 100px;
+    height: 120px;
+}
+
+#b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#e {
+    padding: 10px 0;
+    line-height: 120px;
+}
+
+#g {
+    text-align: right;
+    line-height: 581px;
+}

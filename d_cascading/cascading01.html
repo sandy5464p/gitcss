@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>스타일 우선 순위</title>
+        <style>
+            input {
+                color: hotpink;
+            }
+            input ::placeholder {
+                /*:: → 부연 설명 */
+                color: black;
+            }
+            input {
+                color: aqua; /*!important → 제일 최상위 우선순위*/
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div>
+                <input
+                    type="text"
+                    class="id user"
+                    id="user_id"
+                    placeholder="아이디"
+                />
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>position 실습</title>
+        <style>
+            #image {
+                margin: 0 auto;
+                width: 220px;
+                height: 315px;
+                background-image: url("https://gangnam.koreaisacademy.com/2023/img/tch/teacher007.png");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+            }
+            div .sunglas img {
+                width: 100px;
+                height: 100px;
+            }
+            div.sunglas {
+                position: absolute;
+                top: 15%;
+                left: 18%;
+            }
+            div .hip img {
+                width: 108px;
+                height: 70px;
+            }
+            div.hip {
+                position: absolute;
+                left: 18%;
+                top: 5%;
+            }
+            div .mo img {
+                width: 90px;
+                height: 90px;
+            }
+            div.mo {
+                position: absolute;
+                bottom: 15%;
+                left: 23%;
+                transform: rotate(5deg);
+            }
+            div.show img {
+                width: 150px;
+                height: 90px;
+            }
+            div.show {
+                position: absolute;
+                bottom: -25%;
+                left: 10%;
+            }
+
+            div.blos img {
+                width: 50px;
+                height: 50px;
+            }
+            div.blos {
+                position: absolute;
+                bottom: 52%;
+                left: 15%;
+            }
+            div.blos2 img {
+                width: 50px;
+                height: 50px;
+            }
+            div.blos2 {
+                position: absolute;
+                bottom: 52%;
+                left: 40%;
+            }
+            #red {
+                color: red;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="image">
+            <div class="sunglas"><img src="imges/sun.png" /></div>
+
+            <div class="hip"><img src="imges/moja2.png" /></div>
+
+            <div class="mo"><img src="imges/go1.png" /></div>
+
+            <div class="show"><img src="imges/show1.png" /></div>
+            <div class="blos"><img src="imges/blos2.png" /></div>
+            <div class="blos2"><img src="imges/blos2.png" /></div>
+        </div>
+        <br /><br /><br />
+
+        <h1>그의 손에 쥐어진</h1>
+        <h1 id="red">합격 목걸이</h1>
+    </body>
+</html>
